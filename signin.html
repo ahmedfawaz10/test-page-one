@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="signup">
+    <div class="container">
+        <div class="logo">
+            <a href="" class="logo">SIGMA <span>Technologies</span></a>
+        </div>
+        <div class="main2">
+            <h1>Sign In</h1>
+            <a href=""><i class="fa-brands fa-google"></i>Google Sign In</a>
+            <input type="text" placeholder="Email Address" class="email">
+            <div class="pass">
+            <i class="fa-regular fa-eye-slash noteye"></i>
+            <input type="password" placeholder="Password" class="password">
+            </div>
+            <input type="submit" value="Sign In" class="submit">
+            <p>Don't have a Sigma account ? <span>Create an account</span></p>
+        </div>
+    </div>
+   </div>
+   <a href="index.html"><i class="fa-solid fa-house home"></i></a>
+   <script src="main.js"></script>
+   <script>
+        let submit = document.querySelector('.submit');
+        let email = document.querySelector('.email')
+        let pass = document.querySelector('.password')
+        submit.onclick = function () {
+            if (email.value != "" && pass.value != "") {
+                window.location.href = 'index.html';
+            }
+        }
+   </script>
+</body>
+</html>
